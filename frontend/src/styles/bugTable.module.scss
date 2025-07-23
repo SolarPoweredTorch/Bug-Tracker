@@ -1,0 +1,62 @@
+.bugTable {
+    table-layout: fixed;
+}
+
+/* id */
+th:nth-child(1) {
+    width: 5em;
+}
+
+/* summary */
+th:nth-child(2) {
+    width: 24em;
+}
+
+/* type */
+th:nth-child(3) {
+    width: 8em;
+}
+
+/* severity */
+th:nth-child(4) {
+    width: 6em;
+}
+
+/* status */
+th:nth-child(5) {
+    width: 8em;
+}
+
+/* createdAt */
+th:nth-child(6) {
+    width: 10em;
+}
+
+/* updatedAt */
+th:nth-child(7) {
+    width: 10em;
+}
+
+/* commentCount */
+th:nth-child(8) {
+    width: 3em;
+}
+
+.bugTableHeader {
+    font-size: 15px;
+    align-items: center;
+}
+
+.bugTableCell {
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.paginationBar {
+    width: fit-content;
+    margin: auto;
+}
+
+.pageSizeSelectorArea {
+    width: 100%;
+}

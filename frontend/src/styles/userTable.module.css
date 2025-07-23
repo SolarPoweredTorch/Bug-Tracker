@@ -1,0 +1,17 @@
+.userTable {
+    /* width: 100%; */
+    table-layout: auto;
+}
+
+.userTableHeader {
+    font-size: 16px;
+}
+
+.userTableCell {
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.pageSizeSelectorArea {
+    width: 100%;
+}
