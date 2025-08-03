@@ -9,6 +9,8 @@ A full stack bug tracking web app written in Typescript. This project is fully o
 - Comments and notifications: Discussions on bug reports, assignment changes, etc. are tracked and sent out by the server to all relevant users.
 - Statistics and charts: Because it's just nice to see.
 
+<img width="1851" height="958" alt="Screenshot_20250803_090042" src="https://github.com/user-attachments/assets/fa163219-7934-49a2-ad5d-2cd2d0d1be50" />
+
 ## Environment requirements
 
 - MongoDB account and database (e.g. Atlas is fine).
@@ -20,7 +22,7 @@ npm -v
 
 ## Deployment
 
-1. Download the source code to an empty directory.
+1. Download the source code to an empty directory:
 
 ```
 git clone https://github.com/SolarPoweredTorch/Bug-Tracker.git
@@ -34,6 +36,7 @@ npm install
 cd ../backend
 npm install
 ```
+
 3. Configure the .env file. This small file, located at the root of the server directory, sets sensitive local environment variables. Thus, creating your own (in `/backend`) is necessary:
 
 ```
@@ -50,7 +53,8 @@ echo 'SESSION_SECRET="YYYYYY"' >> .env
 ```
 npm start
 ```
-6. Open a browser and go to `http://localhost:3000/`.
+
+6. Once the server is up, open a browser and go to `http://localhost:3000/`.
 
 ## To implement later
 
