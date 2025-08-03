@@ -167,7 +167,7 @@ export const updateTicket: RequestHandler<TicketParams, unknown, TicketUpdateReq
 
             const changedFieldsString = formatArrayToPlainText(changedFields, true);
 
-            if (editor !== ticket.author) {
+            if (ticket.author !== "System" && editor !== ticket.author) {
                 const notification: NotificationBody = {
                     userId: ticket.author,
                     message: `${changedFieldsString} ${changedFields.length > 1 ? "have" : "has"} been changed on your authored ticket ${ticketId}`,

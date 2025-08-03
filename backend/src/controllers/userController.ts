@@ -25,8 +25,8 @@ export const getAuthenticatedUser: RequestHandler = async (req, res, next) => {
 
 export const getUsers: RequestHandler = async (req, res, next) => {
 
-    try {
-        const users = await UserModel.find().exec();
+    try {   // Exclude System "user"
+        const users = await UserModel.find({ username: { $ne: String("System")} }).exec();
         res.status(200).json(users);
     } catch (error) {
         next(error);
@@ -36,7 +36,7 @@ export const getUsers: RequestHandler = async (req, res, next) => {
 export const getUserById: RequestHandler = async (req, res, next) => {
 
     let userId = req.params.userId;
-    
+
     // Kludge for old system-generated tickets. Remove if ticket list is reset.
     if (userId === "0") {
         userId = "000000000000000000000000";
